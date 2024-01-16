@@ -1,0 +1,18 @@
+---
+interface Props {
+  pubDate: string;
+	link: string | undefined;
+}
+
+const { pubDate, link } = Astro.props;
+---
+
+<article>
+  <header>
+    <time datetime={pubDate}>{pubDate}</time>
+  </header>
+  <div><slot /></div>
+  <footer>
+    <p><a href={link}>See full note</a></p>
+  </footer>
+</article>

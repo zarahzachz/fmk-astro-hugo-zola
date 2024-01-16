@@ -1,0 +1,21 @@
+---
+interface Props {
+  pubDate: string;
+	title: string;
+  summary: string;
+	link: string | undefined;
+}
+
+const { pubDate, title, summary, link } = Astro.props;
+---
+
+<article>
+  <header>
+    <time datetime={pubDate}>{pubDate}</time>
+    <h2>{title}</h2>
+  </header>
+  <p>{summary}</p>
+  <footer>
+    <p><a href={link}>Read entire post</a></p>
+  </footer>
+</article>
