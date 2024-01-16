@@ -14,10 +14,45 @@ The following parameters will be explored as part of this experiement:
 - To test how easy it is to use JS (e.g., minification, treeshaking, etc.), each build will have a "filter content" feature to sort content by tag and/or content type
 - **Stretch goal:** To get a feel for built-in functionality, each build will implement 5 posts and notes per page pagination
 
-I'll grade how each SSG performs based on the "How much did doing this piss me off?" scale (😎, 😐, or 🤬).
+I'll grade how each SSG performs based on the "How much did doing this piss me off?" scale (🤩, 😎, 😐, 😠, or 🤬).
 
 ## Astro
 
+To run the project locally, `cd astro` and run `npm run dev` (assuming everything's been installed).
+
+Report card:
+
+| Subject                | Grade | Notes                                                                                                                                                                                                                                   |
+| ---------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Markdown               | 😠    | I'm too familiar with how other SSG handle parsing content (e.g., using a content variable) to feel good about writing this much JS to do the same thing (do I use Fragment? Content? Slot? Collections? It's too much and too murky.). |
+| Templates              | -     | -                                                                                                                                                                                                                                       |
+| Shortcodes             | -     | -                                                                                                                                                                                                                                       |
+| CSS                    | -     | -                                                                                                                                                                                                                                       |
+| JS                     | -     | -                                                                                                                                                                                                                                       |
+| Built-in functionality | -     | -                                                                                                                                                                                                                                       |
+
 ## Hugo
 
+Report card:
+
+| Subject                | Grade | Notes |
+| ---------------------- | ----- | ----- |
+| Markdown               | -     | -     |
+| Templates              | -     | -     |
+| Shortcodes             | -     | -     |
+| CSS                    | -     | -     |
+| JS                     | -     | -     |
+| Built-in functionality | -     | -     |
+
 ## Zola
+
+Report card:
+
+| Subject                | Grade | Notes |
+| ---------------------- | ----- | ----- |
+| Markdown               | -     | -     |
+| Templates              | -     | -     |
+| Shortcodes             | -     | -     |
+| CSS                    | -     | -     |
+| JS                     | -     | -     |
+| Built-in functionality | -     | -     |
