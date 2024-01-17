@@ -11,8 +11,10 @@ const tags = [...new Set(blog.map((b) => b.frontmatter.tags).flat())];
 ---
 
 <Layout title="Welcome!">
-  <h1>This is the FMK Astro experiment. Welcome!</h1>
-  <p>Anim officia ipsum ut qui dolor ad tempor sunt dolor ea est sit anim. Lorem eu consectetur excepteur aute eiusmod sunt laborum reprehenderit reprehenderit esse sint quis. Commodo commodo officia est laboris commodo qui tempor id duis id labore in nulla officia. Ad reprehenderit laborum deserunt aliquip sit magna aliquip anim. Nulla proident mollit occaecat sunt est qui. Irure ex sunt commodo elit ad ex do.</p>
+  <section class="welcome">
+    <h1>This is the FMK Astro experiment. Welcome!</h1>
+    <p>Anim officia ipsum ut qui dolor ad tempor sunt dolor ea est sit anim. Lorem eu consectetur excepteur aute eiusmod sunt laborum reprehenderit reprehenderit esse sint quis. Commodo commodo officia est laboris commodo qui tempor id duis id labore in nulla officia. Ad reprehenderit laborum deserunt aliquip sit magna aliquip anim. Nulla proident mollit occaecat sunt est qui. Irure ex sunt commodo elit ad ex do.</p>
+  </section>
   
   <section>
     {blog.map(b => {

@@ -19,7 +19,11 @@ const { title } = Astro.props;
 	<body>
     <nav aria-label="Primary">
       <a href="/">Return home</a>
-		<slot />
+    </nav>
+
+    <main>
+      <slot />
+    </main>
 	</body>
 </html>
 <style is:global>
