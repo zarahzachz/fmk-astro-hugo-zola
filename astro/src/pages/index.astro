@@ -36,3 +36,26 @@ const tags = [...new Set(blog.map((b) => b.frontmatter.tags).flat())];
     })}
   </section>
 </Layout>
+
+<style is:global>
+  .welcome {
+    margin-block: 2rem;
+    padding-block: 2rem;
+    
+    & h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    & p {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      font-weight: lighter;
+      margin-block-start: 4rem;
+    }
+  }
+  article {
+    border: 1px solid CanvasText;
+  }
+</style>
