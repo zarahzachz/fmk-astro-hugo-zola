@@ -22,14 +22,19 @@ To run the project locally, `cd astro` and run `npm run dev` (assuming everythin
 
 Report card:
 
-| Subject                | Grade | Notes                                                                                                                                                                                                                                   |
-| ---------------------- | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Markdown               | 😠    | I'm too familiar with how other SSG handle parsing content (e.g., using a content variable) to feel good about writing this much JS to do the same thing (do I use Fragment? Content? Slot? Collections? It's too much and too murky.). |
-| Templates              | -     | -                                                                                                                                                                                                                                       |
-| Shortcodes             | -     | -                                                                                                                                                                                                                                       |
-| CSS                    | -     | -                                                                                                                                                                                                                                       |
-| JS                     | -     | -                                                                                                                                                                                                                                       |
-| Built-in functionality | -     | -                                                                                                                                                                                                                                       |
+| Subject                | Grade |
+| ---------------------- | ----- |
+| Markdown               | 😠    |
+| Templates              | 😐    |
+| Shortcodes             | -     |
+| CSS                    | 😎    |
+| JS                     | -     |
+| Built-in functionality | -     |
+
+Questions:
+
+1. Why does Astro have a dozen different ways to grab content from a file? Do I use Fragment? Glob? Content? Slot? Collections? I spent a few hours trying to accomplish what I thought was a simple thing. This can definitely be chalked up to me being new to Astro, but it was still a giant pain in the ass, espcially when other SSG have simple `<Content>` tags you can use and it just works.
+2. Is there an easier way to define a template for a set of pages? I think I've seen other SSG with a config or data file you can add to a page group's directory and it let's you bulk edit the content in that folder. I can't find anything like this in the docs, but that doesn't mean it doesn't exist. If it doesn't, this is a very annoying oversight.
 
 ## Hugo
 
