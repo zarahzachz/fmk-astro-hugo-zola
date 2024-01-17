@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Home | FMK</title>
+
+    <link
+      rel="stylesheet"
+      href="/styles/main.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>
+        This is an experimental blog testing static site generators Astro, Hugo
+        and Zola
+      </h1>
+      <p>
+        This project will serve as the template from which all other projects
+        are built from. It will provide basic UI and behavioral guidance to
+        speed up development for the other experiements. Note that the content
+        used in those projects will come from another directory,
+        <code>/original-content</code>, and this project will use filler content
+        instead.
+      </p>
+    </header>
+    <button type="button">Toggle filter menu</button>
+    <form>
+      <fieldset>
+        <legend>Content type</legend>
+
+        <!-- Does JAWS respect nested labels now? -->
+        <label
+          ><input
+            type="checkbox"
+            name="content-type"
+          />&thinsp;Note</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="content-type"
+          />&thinsp;Post</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="content-type"
+          />&thinsp;Project</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Tags</legend>
+
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Foo</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Bar</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Baz</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Qux</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Quux</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Corge</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Grault</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Garply</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Waldo</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Fred</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Plugh</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Xyzzy</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="tags"
+          />&thinsp;Thud</label
+        >
+      </fieldset>
+      <button type="submit">Filter content</button>
+    </form>
+    <main id="main">
+      <article data-type="post">
+        <header>
+          <h2>
+            <a href="/single.html"
+              >Cillum incididunt cupidatat commodo in consectetur dolore ea
+              labore</a
+            >
+          </h2>
+          <time datetime="2018-07-07">5 years ago</time>
+        </header>
+        <div>
+          <p>
+            Ullamco cillum sint magna elit ea veniam. Consequat occaecat aliquip
+            est do velit pariatur sunt deserunt laborum occaecat mollit in eu
+            ex. Fugiat sunt magna duis labore minim Lorem ad labore aliqua minim
+            incididunt. Voluptate mollit reprehenderit et voluptate consequat
+            cupidatat enim enim in ipsum. Id elit est adipisicing aute proident
+            exercitation voluptate.
+          </p>
+        </div>
+        <footer><a href="/single.html">Read full post</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">1 month ago</time>
+        </header>
+        <div>
+          <p>
+            Incididunt dolore Lorem deserunt dolore et anim aliquip quis duis
+            exercitation aliquip laboris excepteur excepteur. Qui adipisicing
+            reprehenderit laboris nostrud. Sunt pariatur eu irure fugiat nulla
+            pariatur cupidatat. Eu ullamco commodo occaecat est. Incididunt enim
+            ipsum eiusmod pariatur qui incididunt sunt non cupidatat dolor velit
+            eiusmod consectetur. Aute ex nostrud aute cupidatat exercitation
+            occaecat culpa veniam elit ipsum do culpa non.
+          </p>
+          <p>
+            Culpa pariatur elit nulla do adipisicing laborum nisi. Ad culpa id
+            aliqua irure. Ut tempor occaecat nostrud anim occaecat quis duis
+            sunt officia. Exercitation non irure dolor occaecat commodo magna
+            veniam voluptate.
+          </p>
+          <p>
+            Et tempor sint cupidatat officia aliqua exercitation aute veniam
+            tempor voluptate laborum eu non. Tempor eiusmod amet non aliqua
+            cupidatat ut in excepteur qui. Est Lorem veniam ex commodo. Tempor
+            dolore nostrud magna fugiat consequat eu non commodo consectetur.
+            Irure deserunt nisi excepteur in aliqua ut dolor labore eiusmod elit
+            pariatur enim proident ut. Do adipisicing Lorem cupidatat
+            reprehenderit culpa.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">2 days ago</time>
+        </header>
+        <div>
+          <p>
+            Culpa ut fugiat aute magna consectetur duis laboris occaecat velit
+            veniam aute adipisicing ad quis. Amet eiusmod quis consequat anim
+            aute officia est exercitation aute aliqua deserunt labore qui. Culpa
+            velit excepteur in veniam deserunt labore aliqua.
+          </p>
+          <p>
+            Id laboris dolor quis dolore tempor labore ad fugiat elit eiusmod
+            ipsum nulla ex. Eu et do ullamco cillum dolor est consequat est
+            aliqua. Cupidatat anim do adipisicing consequat nostrud sint enim
+            eiusmod. Amet cillum velit qui commodo reprehenderit voluptate
+            exercitation nostrud labore commodo aliquip consectetur. Laborum ad
+            sit nulla nulla voluptate aute deserunt eu nostrud ea quis ea
+            deserunt eiusmod. Sunt ut sint reprehenderit quis aliquip labore. Et
+            ut anim tempor sit non cillum sint laboris excepteur.
+          </p>
+          <p>
+            Adipisicing nostrud aliqua qui proident. Cillum non aute non
+            commodo. Aute ut occaecat mollit velit ea nostrud consequat.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article data-type="post">
+        <header>
+          <h2>
+            <a href="/single.html"
+              >Cillum incididunt cupidatat commodo in consectetur dolore ea
+              labore</a
+            >
+          </h2>
+          <time datetime="2018-07-07">5 years ago</time>
+        </header>
+        <div>
+          <p>
+            Ullamco cillum sint magna elit ea veniam. Consequat occaecat aliquip
+            est do velit pariatur sunt deserunt laborum occaecat mollit in eu
+            ex. Fugiat sunt magna duis labore minim Lorem ad labore aliqua minim
+            incididunt. Voluptate mollit reprehenderit et voluptate consequat
+            cupidatat enim enim in ipsum. Id elit est adipisicing aute proident
+            exercitation voluptate.
+          </p>
+        </div>
+        <footer><a href="/single.html">Read full post</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">1 month ago</time>
+        </header>
+        <div>
+          <p>
+            Incididunt dolore Lorem deserunt dolore et anim aliquip quis duis
+            exercitation aliquip laboris excepteur excepteur. Qui adipisicing
+            reprehenderit laboris nostrud. Sunt pariatur eu irure fugiat nulla
+            pariatur cupidatat. Eu ullamco commodo occaecat est. Incididunt enim
+            ipsum eiusmod pariatur qui incididunt sunt non cupidatat dolor velit
+            eiusmod consectetur. Aute ex nostrud aute cupidatat exercitation
+            occaecat culpa veniam elit ipsum do culpa non.
+          </p>
+          <p>
+            Culpa pariatur elit nulla do adipisicing laborum nisi. Ad culpa id
+            aliqua irure. Ut tempor occaecat nostrud anim occaecat quis duis
+            sunt officia. Exercitation non irure dolor occaecat commodo magna
+            veniam voluptate.
+          </p>
+          <p>
+            Et tempor sint cupidatat officia aliqua exercitation aute veniam
+            tempor voluptate laborum eu non. Tempor eiusmod amet non aliqua
+            cupidatat ut in excepteur qui. Est Lorem veniam ex commodo. Tempor
+            dolore nostrud magna fugiat consequat eu non commodo consectetur.
+            Irure deserunt nisi excepteur in aliqua ut dolor labore eiusmod elit
+            pariatur enim proident ut. Do adipisicing Lorem cupidatat
+            reprehenderit culpa.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">2 days ago</time>
+        </header>
+        <div>
+          <p>
+            Culpa ut fugiat aute magna consectetur duis laboris occaecat velit
+            veniam aute adipisicing ad quis. Amet eiusmod quis consequat anim
+            aute officia est exercitation aute aliqua deserunt labore qui. Culpa
+            velit excepteur in veniam deserunt labore aliqua.
+          </p>
+          <p>
+            Id laboris dolor quis dolore tempor labore ad fugiat elit eiusmod
+            ipsum nulla ex. Eu et do ullamco cillum dolor est consequat est
+            aliqua. Cupidatat anim do adipisicing consequat nostrud sint enim
+            eiusmod. Amet cillum velit qui commodo reprehenderit voluptate
+            exercitation nostrud labore commodo aliquip consectetur. Laborum ad
+            sit nulla nulla voluptate aute deserunt eu nostrud ea quis ea
+            deserunt eiusmod. Sunt ut sint reprehenderit quis aliquip labore. Et
+            ut anim tempor sit non cillum sint laboris excepteur.
+          </p>
+          <p>
+            Adipisicing nostrud aliqua qui proident. Cillum non aute non
+            commodo. Aute ut occaecat mollit velit ea nostrud consequat.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article data-type="post">
+        <header>
+          <h2>
+            <a href="/single.html"
+              >Cillum incididunt cupidatat commodo in consectetur dolore ea
+              labore</a
+            >
+          </h2>
+          <time datetime="2018-07-07">5 years ago</time>
+        </header>
+        <div>
+          <p>
+            Ullamco cillum sint magna elit ea veniam. Consequat occaecat aliquip
+            est do velit pariatur sunt deserunt laborum occaecat mollit in eu
+            ex. Fugiat sunt magna duis labore minim Lorem ad labore aliqua minim
+            incididunt. Voluptate mollit reprehenderit et voluptate consequat
+            cupidatat enim enim in ipsum. Id elit est adipisicing aute proident
+            exercitation voluptate.
+          </p>
+        </div>
+        <footer><a href="/single.html">Read full post</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">1 month ago</time>
+        </header>
+        <div>
+          <p>
+            Incididunt dolore Lorem deserunt dolore et anim aliquip quis duis
+            exercitation aliquip laboris excepteur excepteur. Qui adipisicing
+            reprehenderit laboris nostrud. Sunt pariatur eu irure fugiat nulla
+            pariatur cupidatat. Eu ullamco commodo occaecat est. Incididunt enim
+            ipsum eiusmod pariatur qui incididunt sunt non cupidatat dolor velit
+            eiusmod consectetur. Aute ex nostrud aute cupidatat exercitation
+            occaecat culpa veniam elit ipsum do culpa non.
+          </p>
+          <p>
+            Culpa pariatur elit nulla do adipisicing laborum nisi. Ad culpa id
+            aliqua irure. Ut tempor occaecat nostrud anim occaecat quis duis
+            sunt officia. Exercitation non irure dolor occaecat commodo magna
+            veniam voluptate.
+          </p>
+          <p>
+            Et tempor sint cupidatat officia aliqua exercitation aute veniam
+            tempor voluptate laborum eu non. Tempor eiusmod amet non aliqua
+            cupidatat ut in excepteur qui. Est Lorem veniam ex commodo. Tempor
+            dolore nostrud magna fugiat consequat eu non commodo consectetur.
+            Irure deserunt nisi excepteur in aliqua ut dolor labore eiusmod elit
+            pariatur enim proident ut. Do adipisicing Lorem cupidatat
+            reprehenderit culpa.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">2 days ago</time>
+        </header>
+        <div>
+          <p>
+            Culpa ut fugiat aute magna consectetur duis laboris occaecat velit
+            veniam aute adipisicing ad quis. Amet eiusmod quis consequat anim
+            aute officia est exercitation aute aliqua deserunt labore qui. Culpa
+            velit excepteur in veniam deserunt labore aliqua.
+          </p>
+          <p>
+            Id laboris dolor quis dolore tempor labore ad fugiat elit eiusmod
+            ipsum nulla ex. Eu et do ullamco cillum dolor est consequat est
+            aliqua. Cupidatat anim do adipisicing consequat nostrud sint enim
+            eiusmod. Amet cillum velit qui commodo reprehenderit voluptate
+            exercitation nostrud labore commodo aliquip consectetur. Laborum ad
+            sit nulla nulla voluptate aute deserunt eu nostrud ea quis ea
+            deserunt eiusmod. Sunt ut sint reprehenderit quis aliquip labore. Et
+            ut anim tempor sit non cillum sint laboris excepteur.
+          </p>
+          <p>
+            Adipisicing nostrud aliqua qui proident. Cillum non aute non
+            commodo. Aute ut occaecat mollit velit ea nostrud consequat.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article data-type="post">
+        <header>
+          <h2>
+            <a href="/single.html"
+              >Cillum incididunt cupidatat commodo in consectetur dolore ea
+              labore</a
+            >
+          </h2>
+          <time datetime="2018-07-07">5 years ago</time>
+        </header>
+        <div>
+          <p>
+            Ullamco cillum sint magna elit ea veniam. Consequat occaecat aliquip
+            est do velit pariatur sunt deserunt laborum occaecat mollit in eu
+            ex. Fugiat sunt magna duis labore minim Lorem ad labore aliqua minim
+            incididunt. Voluptate mollit reprehenderit et voluptate consequat
+            cupidatat enim enim in ipsum. Id elit est adipisicing aute proident
+            exercitation voluptate.
+          </p>
+        </div>
+        <footer><a href="/single.html">Read full post</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">1 month ago</time>
+        </header>
+        <div>
+          <p>
+            Incididunt dolore Lorem deserunt dolore et anim aliquip quis duis
+            exercitation aliquip laboris excepteur excepteur. Qui adipisicing
+            reprehenderit laboris nostrud. Sunt pariatur eu irure fugiat nulla
+            pariatur cupidatat. Eu ullamco commodo occaecat est. Incididunt enim
+            ipsum eiusmod pariatur qui incididunt sunt non cupidatat dolor velit
+            eiusmod consectetur. Aute ex nostrud aute cupidatat exercitation
+            occaecat culpa veniam elit ipsum do culpa non.
+          </p>
+          <p>
+            Culpa pariatur elit nulla do adipisicing laborum nisi. Ad culpa id
+            aliqua irure. Ut tempor occaecat nostrud anim occaecat quis duis
+            sunt officia. Exercitation non irure dolor occaecat commodo magna
+            veniam voluptate.
+          </p>
+          <p>
+            Et tempor sint cupidatat officia aliqua exercitation aute veniam
+            tempor voluptate laborum eu non. Tempor eiusmod amet non aliqua
+            cupidatat ut in excepteur qui. Est Lorem veniam ex commodo. Tempor
+            dolore nostrud magna fugiat consequat eu non commodo consectetur.
+            Irure deserunt nisi excepteur in aliqua ut dolor labore eiusmod elit
+            pariatur enim proident ut. Do adipisicing Lorem cupidatat
+            reprehenderit culpa.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">2 days ago</time>
+        </header>
+        <div>
+          <p>
+            Culpa ut fugiat aute magna consectetur duis laboris occaecat velit
+            veniam aute adipisicing ad quis. Amet eiusmod quis consequat anim
+            aute officia est exercitation aute aliqua deserunt labore qui. Culpa
+            velit excepteur in veniam deserunt labore aliqua.
+          </p>
+          <p>
+            Id laboris dolor quis dolore tempor labore ad fugiat elit eiusmod
+            ipsum nulla ex. Eu et do ullamco cillum dolor est consequat est
+            aliqua. Cupidatat anim do adipisicing consequat nostrud sint enim
+            eiusmod. Amet cillum velit qui commodo reprehenderit voluptate
+            exercitation nostrud labore commodo aliquip consectetur. Laborum ad
+            sit nulla nulla voluptate aute deserunt eu nostrud ea quis ea
+            deserunt eiusmod. Sunt ut sint reprehenderit quis aliquip labore. Et
+            ut anim tempor sit non cillum sint laboris excepteur.
+          </p>
+          <p>
+            Adipisicing nostrud aliqua qui proident. Cillum non aute non
+            commodo. Aute ut occaecat mollit velit ea nostrud consequat.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article data-type="post">
+        <header>
+          <h2>
+            <a href="/single.html"
+              >Cillum incididunt cupidatat commodo in consectetur dolore ea
+              labore</a
+            >
+          </h2>
+          <time datetime="2018-07-07">5 years ago</time>
+        </header>
+        <div>
+          <p>
+            Ullamco cillum sint magna elit ea veniam. Consequat occaecat aliquip
+            est do velit pariatur sunt deserunt laborum occaecat mollit in eu
+            ex. Fugiat sunt magna duis labore minim Lorem ad labore aliqua minim
+            incididunt. Voluptate mollit reprehenderit et voluptate consequat
+            cupidatat enim enim in ipsum. Id elit est adipisicing aute proident
+            exercitation voluptate.
+          </p>
+        </div>
+        <footer><a href="/single.html">Read full post</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">1 month ago</time>
+        </header>
+        <div>
+          <p>
+            Incididunt dolore Lorem deserunt dolore et anim aliquip quis duis
+            exercitation aliquip laboris excepteur excepteur. Qui adipisicing
+            reprehenderit laboris nostrud. Sunt pariatur eu irure fugiat nulla
+            pariatur cupidatat. Eu ullamco commodo occaecat est. Incididunt enim
+            ipsum eiusmod pariatur qui incididunt sunt non cupidatat dolor velit
+            eiusmod consectetur. Aute ex nostrud aute cupidatat exercitation
+            occaecat culpa veniam elit ipsum do culpa non.
+          </p>
+          <p>
+            Culpa pariatur elit nulla do adipisicing laborum nisi. Ad culpa id
+            aliqua irure. Ut tempor occaecat nostrud anim occaecat quis duis
+            sunt officia. Exercitation non irure dolor occaecat commodo magna
+            veniam voluptate.
+          </p>
+          <p>
+            Et tempor sint cupidatat officia aliqua exercitation aute veniam
+            tempor voluptate laborum eu non. Tempor eiusmod amet non aliqua
+            cupidatat ut in excepteur qui. Est Lorem veniam ex commodo. Tempor
+            dolore nostrud magna fugiat consequat eu non commodo consectetur.
+            Irure deserunt nisi excepteur in aliqua ut dolor labore eiusmod elit
+            pariatur enim proident ut. Do adipisicing Lorem cupidatat
+            reprehenderit culpa.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">2 days ago</time>
+        </header>
+        <div>
+          <p>
+            Culpa ut fugiat aute magna consectetur duis laboris occaecat velit
+            veniam aute adipisicing ad quis. Amet eiusmod quis consequat anim
+            aute officia est exercitation aute aliqua deserunt labore qui. Culpa
+            velit excepteur in veniam deserunt labore aliqua.
+          </p>
+          <p>
+            Id laboris dolor quis dolore tempor labore ad fugiat elit eiusmod
+            ipsum nulla ex. Eu et do ullamco cillum dolor est consequat est
+            aliqua. Cupidatat anim do adipisicing consequat nostrud sint enim
+            eiusmod. Amet cillum velit qui commodo reprehenderit voluptate
+            exercitation nostrud labore commodo aliquip consectetur. Laborum ad
+            sit nulla nulla voluptate aute deserunt eu nostrud ea quis ea
+            deserunt eiusmod. Sunt ut sint reprehenderit quis aliquip labore. Et
+            ut anim tempor sit non cillum sint laboris excepteur.
+          </p>
+          <p>
+            Adipisicing nostrud aliqua qui proident. Cillum non aute non
+            commodo. Aute ut occaecat mollit velit ea nostrud consequat.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article data-type="post">
+        <header>
+          <h2>
+            <a href="/single.html"
+              >Cillum incididunt cupidatat commodo in consectetur dolore ea
+              labore</a
+            >
+          </h2>
+          <time datetime="2018-07-07">5 years ago</time>
+        </header>
+        <div>
+          <p>
+            Ullamco cillum sint magna elit ea veniam. Consequat occaecat aliquip
+            est do velit pariatur sunt deserunt laborum occaecat mollit in eu
+            ex. Fugiat sunt magna duis labore minim Lorem ad labore aliqua minim
+            incididunt. Voluptate mollit reprehenderit et voluptate consequat
+            cupidatat enim enim in ipsum. Id elit est adipisicing aute proident
+            exercitation voluptate.
+          </p>
+        </div>
+        <footer><a href="/single.html">Read full post</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">1 month ago</time>
+        </header>
+        <div>
+          <p>
+            Incididunt dolore Lorem deserunt dolore et anim aliquip quis duis
+            exercitation aliquip laboris excepteur excepteur. Qui adipisicing
+            reprehenderit laboris nostrud. Sunt pariatur eu irure fugiat nulla
+            pariatur cupidatat. Eu ullamco commodo occaecat est. Incididunt enim
+            ipsum eiusmod pariatur qui incididunt sunt non cupidatat dolor velit
+            eiusmod consectetur. Aute ex nostrud aute cupidatat exercitation
+            occaecat culpa veniam elit ipsum do culpa non.
+          </p>
+          <p>
+            Culpa pariatur elit nulla do adipisicing laborum nisi. Ad culpa id
+            aliqua irure. Ut tempor occaecat nostrud anim occaecat quis duis
+            sunt officia. Exercitation non irure dolor occaecat commodo magna
+            veniam voluptate.
+          </p>
+          <p>
+            Et tempor sint cupidatat officia aliqua exercitation aute veniam
+            tempor voluptate laborum eu non. Tempor eiusmod amet non aliqua
+            cupidatat ut in excepteur qui. Est Lorem veniam ex commodo. Tempor
+            dolore nostrud magna fugiat consequat eu non commodo consectetur.
+            Irure deserunt nisi excepteur in aliqua ut dolor labore eiusmod elit
+            pariatur enim proident ut. Do adipisicing Lorem cupidatat
+            reprehenderit culpa.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+      <article
+        data-type="note"
+        id="note-foo"
+      >
+        <header>
+          <time datetime="2018-07-07">2 days ago</time>
+        </header>
+        <div>
+          <p>
+            Culpa ut fugiat aute magna consectetur duis laboris occaecat velit
+            veniam aute adipisicing ad quis. Amet eiusmod quis consequat anim
+            aute officia est exercitation aute aliqua deserunt labore qui. Culpa
+            velit excepteur in veniam deserunt labore aliqua.
+          </p>
+          <p>
+            Id laboris dolor quis dolore tempor labore ad fugiat elit eiusmod
+            ipsum nulla ex. Eu et do ullamco cillum dolor est consequat est
+            aliqua. Cupidatat anim do adipisicing consequat nostrud sint enim
+            eiusmod. Amet cillum velit qui commodo reprehenderit voluptate
+            exercitation nostrud labore commodo aliquip consectetur. Laborum ad
+            sit nulla nulla voluptate aute deserunt eu nostrud ea quis ea
+            deserunt eiusmod. Sunt ut sint reprehenderit quis aliquip labore. Et
+            ut anim tempor sit non cillum sint laboris excepteur.
+          </p>
+          <p>
+            Adipisicing nostrud aliqua qui proident. Cillum non aute non
+            commodo. Aute ut occaecat mollit velit ea nostrud consequat.
+          </p>
+        </div>
+        <footer><a href="#note-foo">Share note</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
