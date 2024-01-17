@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "Karai's Redemption"
 date: "2023-07-15"
 type: "note"

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "Casey Jones: Hockey Hero"
 date: "2023-09-18"
 type: "note"

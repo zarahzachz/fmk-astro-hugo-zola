@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "Splinter's Wisdom"
 date: "2023-08-03"
 type: "note"

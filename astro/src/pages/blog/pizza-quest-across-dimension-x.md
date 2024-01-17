@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "Pizza Quest Across Dimension X"
 date: "2023-02-02"
 type: "note"

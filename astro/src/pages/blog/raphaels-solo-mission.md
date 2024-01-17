@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "Raphael's Solo Mission"
 date: "2023-06-08"
 type: "post"

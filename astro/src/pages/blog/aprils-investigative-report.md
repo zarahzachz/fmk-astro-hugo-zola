@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "April's Investigative Report"
 date: "2023-03-10"
 type: "note"

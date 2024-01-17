@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "The Shredder's Latest Scheme"
 date: "2023-01-15"
 type: "post"

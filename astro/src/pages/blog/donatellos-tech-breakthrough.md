@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "Donatello's Tech Breakthrough"
 date: "2023-04-05"
 type: "post"

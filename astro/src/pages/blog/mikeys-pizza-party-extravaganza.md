@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Single.astro
 title: "Mikey's Pizza Party Extravaganza"
 date: "2023-05-20"
 type: "note"

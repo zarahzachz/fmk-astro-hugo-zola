@@ -1,0 +1,77 @@
+---
+import Layout from './Layout.astro';
+interface Props {
+  frontmatter: {
+    title: string;
+    tags: Array<string>;
+    date: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+
+---
+
+<Layout title={frontmatter.title}>
+  <article>
+    <header>
+      <h1>{frontmatter.title}</h1>
+      <time datetime={frontmatter.date}>{frontmatter.date}</time>
+      <ul role="list" class="tags">
+        {frontmatter.tags.map((tag) => {
+          return <li class="tag">{tag}</li>
+        })}
+      </ul>
+    </header>
+    <div class="content">
+      <slot />
+    </div>
+  </article>
+</Layout>
+  
+  <style>
+    header {
+      display: grid;
+      grid-template-areas: "title title" "tags date";
+      justify-content: space-between;
+      border-block-end: 1px solid CanvasText;
+      margin-block-end: 2rem;
+      padding-block-end: 1rem;
+    }
+
+    h1 {
+      grid-area: title;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-block: 2rem 1rem;
+    }
+
+    ul {
+      grid-area: tags;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 1ch;
+    }
+
+    li {
+      text-transform: capitalize;
+      border: 1px solid CanvasText;
+      border-radius: .25em;
+      font-size: .75em;
+      line-height: 1;
+      text-transform: uppercase;
+      padding: .5ch 1ch;
+    }
+
+    time {
+      grid-area: date;
+      justify-self: end;
+    }
+
+    .content > * + * {
+      margin-block-start: 2rem;
+    }
+  </style>
