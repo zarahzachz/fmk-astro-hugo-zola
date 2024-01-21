@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="welcome wrapper">
       <h1>
         This is an experimental blog testing static site generators Astro, Hugo
         and Zola
@@ -28,126 +28,138 @@
         instead.
       </p>
     </header>
-    <button type="button">Toggle filter menu</button>
-    <form>
-      <fieldset>
-        <legend>Content type</legend>
 
-        <!-- Does JAWS respect nested labels now? -->
-        <label
-          ><input
-            type="checkbox"
-            name="content-type"
-          />&thinsp;Note</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="content-type"
-          />&thinsp;Post</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="content-type"
-          />&thinsp;Project</label
-        >
-      </fieldset>
+    <div class="filter-menu wrapper">
+      <button
+        type="button"
+        class="mobile-toggle"
+        id="mobileToggle"
+      >
+        Toggle filter menu
+      </button>
+      <form>
+        <fieldset>
+          <legend>Content type</legend>
 
-      <fieldset>
-        <legend>Tags</legend>
+          <!-- Does JAWS respect nested labels now? -->
+          <label
+            ><input
+              type="checkbox"
+              name="content-type"
+            />&thinsp;Note</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="content-type"
+            />&thinsp;Post</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="content-type"
+            />&thinsp;Project</label
+          >
+        </fieldset>
 
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Foo</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Bar</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Baz</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Qux</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Quux</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Corge</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Grault</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Garply</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Waldo</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Fred</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Plugh</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Xyzzy</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="tags"
-          />&thinsp;Thud</label
-        >
-      </fieldset>
-      <button type="submit">Filter content</button>
-    </form>
-    <main id="main">
+        <fieldset>
+          <legend>Tags</legend>
+
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Foo</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Bar</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Baz</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Qux</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Quux</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Corge</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Grault</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Garply</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Waldo</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Fred</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Plugh</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Xyzzy</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="tags"
+            />&thinsp;Thud</label
+          >
+        </fieldset>
+        <button type="submit">Filter content</button>
+      </form>
+    </div>
+    <main
+      id="main"
+      class="wrapper"
+    >
       <article data-type="post">
         <header>
+          <time datetime="2018-07-07">5 years ago</time>
           <h2>
             <a href="/single.html"
               >Cillum incididunt cupidatat commodo in consectetur dolore ea
               labore</a
             >
           </h2>
-          <time datetime="2018-07-07">5 years ago</time>
         </header>
         <div>
           <p>
@@ -229,13 +241,13 @@
       </article>
       <article data-type="post">
         <header>
+          <time datetime="2018-07-07">5 years ago</time>
           <h2>
             <a href="/single.html"
               >Cillum incididunt cupidatat commodo in consectetur dolore ea
               labore</a
             >
           </h2>
-          <time datetime="2018-07-07">5 years ago</time>
         </header>
         <div>
           <p>
@@ -317,13 +329,13 @@
       </article>
       <article data-type="post">
         <header>
+          <time datetime="2018-07-07">5 years ago</time>
           <h2>
             <a href="/single.html"
               >Cillum incididunt cupidatat commodo in consectetur dolore ea
               labore</a
             >
           </h2>
-          <time datetime="2018-07-07">5 years ago</time>
         </header>
         <div>
           <p>
@@ -405,13 +417,13 @@
       </article>
       <article data-type="post">
         <header>
+          <time datetime="2018-07-07">5 years ago</time>
           <h2>
             <a href="/single.html"
               >Cillum incididunt cupidatat commodo in consectetur dolore ea
               labore</a
             >
           </h2>
-          <time datetime="2018-07-07">5 years ago</time>
         </header>
         <div>
           <p>
@@ -493,13 +505,13 @@
       </article>
       <article data-type="post">
         <header>
+          <time datetime="2018-07-07">5 years ago</time>
           <h2>
             <a href="/single.html"
               >Cillum incididunt cupidatat commodo in consectetur dolore ea
               labore</a
             >
           </h2>
-          <time datetime="2018-07-07">5 years ago</time>
         </header>
         <div>
           <p>
@@ -581,13 +593,13 @@
       </article>
       <article data-type="post">
         <header>
+          <time datetime="2018-07-07">5 years ago</time>
           <h2>
             <a href="/single.html"
               >Cillum incididunt cupidatat commodo in consectetur dolore ea
               labore</a
             >
           </h2>
-          <time datetime="2018-07-07">5 years ago</time>
         </header>
         <div>
           <p>
@@ -668,5 +680,12 @@
         <footer><a href="#note-foo">Share note</a></footer>
       </article>
     </main>
+
+    <script>
+      mobileToggle.addEventListener("click", () => {
+        const form = document.querySelector("form");
+        form.hidden = !form.hidden;
+      });
+    </script>
   </body>
 </html>

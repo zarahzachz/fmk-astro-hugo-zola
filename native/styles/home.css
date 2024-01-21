@@ -1,0 +1,151 @@
+@import "https://unpkg.com/open-props";
+
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.25,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --step--2: clamp(0.6944rem, 0.6855rem + 0.0446vw, 0.72rem);
+  --step--1: clamp(0.8331rem, 0.8099rem + 0.1163vw, 0.9rem);
+  --step-0: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+  --step-1: clamp(1.2rem, 1.1283rem + 0.3587vw, 1.4063rem);
+  --step-2: clamp(1.44rem, 1.3293rem + 0.5533vw, 1.7581rem);
+  --step-3: clamp(1.7281rem, 1.5649rem + 0.8163vw, 2.1975rem);
+  --step-4: clamp(2.0738rem, 1.8396rem + 1.1707vw, 2.7469rem);
+  --step-5: clamp(2.4881rem, 2.1594rem + 1.6435vw, 3.4331rem);
+  --step-6: clamp(2.9863rem, 2.5323rem + 2.2696vw, 4.2913rem);
+
+  /* color-scheme: light dark; */
+  accent-color: yellow;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  background-color: var(--gray-12);
+  color: var(--gray-0);
+}
+
+a {
+  color: yellow;
+
+  &:visited {
+    color: orange;
+  }
+}
+
+code {
+  font-family: "Nimbus Mono PS", "Courier New", monospace;
+  font-size: 0.75em;
+  background-color: var(--gray-9);
+  padding: calc(0.25em / 2) 0.125em;
+}
+
+.wrapper {
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+.welcome {
+  margin-block: 3rem;
+
+  & h1 {
+    font-size: var(--step-6);
+    line-height: 1.15;
+  }
+
+  & p {
+    font-size: var(--step-2);
+    font-weight: lighter;
+    margin-block-start: 2rem;
+  }
+}
+
+.filter-menu {
+  margin-block: 5rem;
+
+  & button {
+    appearance: none;
+    border: 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: var(--step--1);
+    padding: 2ch 1ch;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  & .mobile-toggle {
+    background-color: var(--gray-12);
+    border: 1px solid var(--gray-0);
+    color: var(--gray-0);
+  }
+
+  & fieldset {
+    margin-block: 2rem;
+  }
+
+  & legend {
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    margin-block-end: 0.5rem;
+  }
+
+  & label {
+    display: flex;
+    align-items: center;
+    font-size: var(--step--0);
+    cursor: pointer;
+  }
+
+  & input {
+    height: 1rem;
+    aspect-ratio: 1;
+  }
+
+  & button[type="submit"] {
+    background-color: yellow;
+  }
+}
+
+main {
+  & article {
+    background-color: var(--gray-9);
+    border-radius: 1em;
+    margin-block: 2rem;
+    padding: 2ch;
+
+    & header {
+      margin-block-end: 3rem;
+
+      & a {
+        text-decoration: none;
+      }
+
+      > * + * {
+        margin-block-start: 1rem;
+      }
+    }
+
+    & h2 {
+      font-size: var(--step-3);
+      line-height: 1.2;
+    }
+
+    & time {
+      color: var(--gray-5);
+      flex: 1 0 auto;
+      display: block;
+      font-size: var(--step--1);
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    > div * + * {
+      margin-block: 1rem;
+    }
+
+    & footer {
+      margin-block-start: 1rem;
+    }
+  }
+}
